@@ -15,10 +15,8 @@ public class Departement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-
-    @OneToMany(mappedBy = "department")
+    @OneToMany(mappedBy = "departement")
     private List<Etudiant> students;
 
 
