@@ -7,7 +7,7 @@ type Etudiant {
 
 type Query {
     etudiantById(id: ID!): Etudiant
-    allStudents: [Etudiant]
+    allEtudiant: [Etudiant]
 }
 
 type Mutation {
