@@ -1,0 +1,15 @@
+type Etudiant {
+    id: ID!
+    nom: String!
+    prenom: String!
+    email: String!
+}
+
+type Query {
+    etudiantById(id: ID!): Etudiant
+    allStudents: [Etudiant]
+}
+
+type Mutation {
+    createEtudiant(nom: String!, prenom: String!, email: String!): Etudiant
+}
